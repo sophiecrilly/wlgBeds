@@ -221,31 +221,105 @@
 nav ul {
   list-style: none;
 }
-/* line 4, ../sass/_nav.scss */
-nav ul li {
-  float: right;
+
+/* line 10, ../sass/_nav.scss */
+.li a:link {
+  text-decoration: none;
+  color: #F2F2F2;
 }
 
+/* line 15, ../sass/_nav.scss */
+.li a:visited {
+  color: #F2F2F2;
+}
+
+/* line 19, ../sass/_nav.scss */
+a {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 25, ../sass/_nav.scss */
+  .logoImg {
+    height: 75px;
+    width: 75px;
+  }
+
+  /* line 30, ../sass/_nav.scss */
+  .navBar {
+    padding: 15px;
+    background-color: #014633;
+    color: #F2F2F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* line 42, ../sass/_nav.scss */
+  .listItem {
+    padding: 10px;
+    text-align: left;
+    display: inline;
+  }
+
+  /* line 48, ../sass/_nav.scss */
+  .navList {
+    float: right;
+  }
+
+  /* line 53, ../sass/_nav.scss */
+  .ul {
+    list-style-type: none;
+    /*	margin: 0;*/
+    padding: 25px;
+  }
+}
 /* line 9, ../sass/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/style.scss */
 .green {
   color: #014633;
 }
 
-/* line 13, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .yellow {
   color: #FAE42F;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .white {
   color: #F2F2F2;
 }
 
-/* line 21, ../sass/style.scss */
-.testing {
-  background-image: url("images/bg.img/jpg");
-  background-position: 0 0;
+/* line 26, ../sass/style.scss */
+.bgImg {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* line 33, ../sass/style.scss */
+.bgSize {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 38, ../sass/style.scss */
+.floatLeft {
+  float: left;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,11 @@
 
 @import 'nav';
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .green {
   color: $greenColor;
 }
@@ -18,6 +23,18 @@
   color: $whiteColor;
 }
 
-.testing {
-    @include background('images/bg.img/jpg');
+.bgImg {
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgSize {
+    width: 100vw;
+    height: 100vh;
+}
+
+.floatLeft {
+    float: left;
 }
