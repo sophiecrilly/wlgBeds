@@ -1,0 +1,23 @@
+@import 'variables';
+
+@import 'mixins';
+
+@import 'grid';
+
+@import 'nav';
+
+.green {
+  color: $greenColor;
+}
+
+.yellow {
+  color: $yellowColor;
+}
+
+.white {
+  color: $whiteColor;
+}
+
+.testing {
+    @include background('images/bg.img/jpg');
+}
