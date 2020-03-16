@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @import 'variables';
 
 @import 'mixins';
@@ -6,10 +12,6 @@
 
 @import 'nav';
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 .green {
   color: $greenColor;
@@ -24,7 +26,7 @@ body {
 }
 
 .bgImg {
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bgMob.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,4 +39,26 @@ body {
 
 .floatLeft {
     float: left;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.noScroll {
+    overflow-y: hidden;
+}
+
+.viewProductsButton {
+    color: $yellowColor;
+    width: 250px;
+    
 }
