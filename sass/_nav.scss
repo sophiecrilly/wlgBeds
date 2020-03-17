@@ -68,9 +68,66 @@ a {
 
 
 @media screen and (min-width:600px){
+  .logoImg {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navBar {
+      padding: 13px;
+      background-color: $greenColor;
+      color: $whiteColor;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75px;
+  }
+
+  .hamburgerIcon{
+      font-size: 40px;
+      position: absolute;
+      left: 0;
+  }
+
+  .topNavBar {
+      justify-content: center;
+      position: relative;
+  }
+
+  .hamburgerNav {
+      width: 100%;
+      height:100%;
+      background-color: $whiteColor;
+      position: fixed;
+      top: 75px;
+      left: 0;
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .listItem {
+      font-size: 40px;
+      padding: 35px;
+  }
+}
+
+@media screen and (min-width:1000px){
+
+.hamburgerNav {
+  display: none;
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
 .logoImg {
-    height: 75px;
-    width: 75px;
+    height: 55px;
+    width: 55px;
 }
 
 .navList{
@@ -85,9 +142,8 @@ a {
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    height: 75px;
 }
 
 .listItem {
