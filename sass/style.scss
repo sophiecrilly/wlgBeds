@@ -26,7 +26,7 @@
 }
 
 .bgImg {
-    background-image: url("../images/bgMob.jpg");
+    background-image: url("../images/bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,6 +35,11 @@
 .bgSize {
     width: 100vw;
     height: 100vh;
+}
+
+.whiteLogo {
+    width: 230px;
+    height: 95px;
 }
 
 .floatLeft {
@@ -53,24 +58,74 @@
     display: flex;
 }
 
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
 .noScroll {
     overflow-y: hidden;
 }
 
 .viewProductsButton {
     background-color: $yellowColor;
-    width: 250px;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 210px;
+    height: 50px;
+    font-family: $headingFont;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+@media screen and (min-width:600px){
+  .bgImg {
+      background-image: url("../images/bg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .viewProductsButton {
+      background-color: $yellowColor;
+      width: 380px;
+      height: 65px;
+      font-family: $headingFont;
+      font-size: 25px;
+      border-radius: 6px;
+  }
+
+  .whiteLogo {
+      width: 410px;
+      height: 150px;
+  }
+
 }
 
 @media screen and (min-width:1000px){
   .bgImg {
-      background-image: url("../images/bgDT.jpg");
+      background-image: url("../images/bg.jpg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+  }
+
+  .viewProductsButton {
+      background-color: $yellowColor;
+      width: 530px;
+      height: 75px;
+      font-family: $headingFont;
+      font-size: 35px;
+      border-radius: 6px;
+  }
+
+  .whiteLogo {
+      width: 600px;
+      height: 260px;
   }
 }

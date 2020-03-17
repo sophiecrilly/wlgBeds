@@ -15,30 +15,36 @@
 
 
 
-    <div class="bgSize bgImg">
+    <div class="bgSize bgImg flex justifyContentCenter">
 
 
     <nav class="navBar">
         <div class="topNavBar flex">
             <div id="hamburgerIcon" class="hamburgerIcon">&#x2630;</div>
             <img src="images/logo.jpg" alt="wellington beds logo" class="logoImg">
+            <div id="hamburgerNav" class="hamburgerNav hidden">
+                <ul class="navList textAlignCenter ul">
+                    <li class="listItem li"><a href="index.html">HOME</a></li>
+                    <li class="listItem li"><a href="shop.html">SHOP</a></li>
+                    <li class="listItem li"><a href="#">SPECIALS</a></li>
+                    <li class="listItem li"><a href="#">CONTACT</a></li>
+                    <li class="listItem li"><a href="#">ABOUT US</a></li>
+                    <li class="listItem li"><a href="#">FAQ'S</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div id="hamburgerNav" class="hamburgerNav hidden">
-            <ul class="navList textAlignCenter ul">
-                <li class="listItem li"><a href="index.html">HOME</a></li>
-                <li class="listItem li"><a href="shop.html">SHOP</a></li>
-                <li class="listItem li"><a href="#">SPECIALS</a></li>
-                <li class="listItem li"><a href="#">CONTACT</a></li>
-                <li class="listItem li"><a href="#">ABOUT US</a></li>
-                <li class="listItem li"><a href="#">FAQ'S</a></li>
-            </ul>
-        </div>
+
     </nav>
 
-    <button class="viewProductsButton" type="button" name="button">VIEW OUR PRODUCTS</button>
+        <div class="flex justifyContentCenter alignItemsCenter flexDirectionColumn">
 
-</div>
+            <img src="images/wlgbeds.png" class=" whiteLogo" alt="wellington beds logo">
+
+            <button class="viewProductsButton" type="button" name="button" onclick="window.location.href='shop.html'">VIEW OUR PRODUCTS</button>
+        </div>
+
+    </div>
 
 
 

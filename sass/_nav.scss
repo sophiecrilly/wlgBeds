@@ -67,94 +67,37 @@ a {
 }
 
 
-@media screen and (min-width:600px){
-  .logoImg {
-    height: 50px;
-    width: 50px;
-  }
-
-  .navBar {
-      padding: 13px;
-      background-color: $greenColor;
-      color: $whiteColor;
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 75px;
-  }
-
-  .hamburgerIcon{
-      font-size: 40px;
-      position: absolute;
-      left: 0;
-  }
-
-  .topNavBar {
-      justify-content: center;
-      position: relative;
-  }
-
-  .hamburgerNav {
-      width: 100%;
-      height:100%;
-      background-color: $whiteColor;
-      position: fixed;
-      top: 75px;
-      left: 0;
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .listItem {
-      font-size: 40px;
-      padding: 35px;
-  }
-}
-
 @media screen and (min-width:1000px){
+    .topNavBar {
+        justify-content: flex-start;
+    }
 
-.hamburgerNav {
-  display: none;
-}
+    .hamburgerNav {
+        display: flex !important;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        position: static;
+    }
 
-.hamburgerIcon {
-  display: none;
-}
+    .hamburgerIcon {
+      display: none;
+    }
 
-.logoImg {
-    height: 55px;
-    width: 55px;
-}
+    .li a:link {
+        color: $whiteColor;
+    }
 
-.navList{
-    list-style: none;
-    display: none;
-}
+    .li a:visited {
+        color: $whiteColor;
+    }
 
-.navBar {
-    padding: 15px;
-    background-color: $greenColor;
-    color: $whiteColor;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    width: 100%;
-    height: 75px;
-}
-
-.listItem {
-    padding: 10px;
+    .listItem {
+    padding: 10px 27px;
     text-align: left;
     display: inline;
-}
-
-.navList {
-    float: right;
-}
+    font-size: 25px;
+    }
 
 
 }

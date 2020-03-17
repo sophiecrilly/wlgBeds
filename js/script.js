@@ -13,6 +13,6 @@
 
 $('#hamburgerIcon').click(function(){
     $('#hamburgerNav').toggle();
-    // $('#hamburgerNav').removeClass('hidden');
+    $('#hamburgerNav').removeClass('hidden');
 
 });
